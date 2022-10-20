@@ -12,6 +12,7 @@
   display: flex;
   align-items: center;
   background-color: #f2f2f2;
+  position: relative;
 }
 
 .header__square-pic {
@@ -72,4 +73,34 @@
   background-color: #2f80ed;
 }
 
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto;
+  width: 80%;
+}
 
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__brief {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2F80ED;
+  width: 175px;
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+}
