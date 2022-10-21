@@ -27,6 +27,7 @@
   margin-top: 80px;
 }
 
+/*  Картинка перекрывает этот лого если вдруг наезжаем  */
 .logo_place_header {
   position: absolute;
   top: 30px;
@@ -35,6 +36,7 @@
   width: 228px;
 }
 
+/*  Картинка перекрывает этот лого если вдруг наезжаем  */
 .header__title {
   width: 730px;
   margin-left: 64px;
@@ -43,6 +45,7 @@
   font-weight: 600;
 }
 
+/*  необходимо обнулить браузерные отступы  */
 .header__subtitle {
   position: absolute;
   left: 64px;
@@ -52,6 +55,7 @@
   font-size: 18px;
   font-weight: normal;
 }
+
 .link {
   color: #2F80ED;
   text-decoration: none;
@@ -69,6 +73,7 @@
 .header__square-pic {
   position: absolute;
   right: 0;
+  /*  тут не margin-top, а просто top */
   margin-top: 64px;
   background-color: #2f80ed;
 }
@@ -85,6 +90,7 @@
   min-width: 784px;
 }
 
+/*  необходимо обнулить браузерные отступы  */
 .two-columns__brief {
   line-height: 1.2;
   font-size: 18px;
@@ -93,6 +99,8 @@
   width: 175px;
 }
 
+/*  неправильные отступы между абзацами (.two-columns__paragraph)
+    также последнему .two-columns__paragraph нужно обнулить отступ  */
 .two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
