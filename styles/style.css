@@ -27,25 +27,25 @@
   margin-top: 80px;
 }
 
-/*  Картинка перекрывает этот лого если вдруг наезжаем  */
 .logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
   height: 32px;
   width: 228px;
+  background-image: url(/images/logo_place_header.svg);
+  z-index: 2;
 }
 
-/*  Картинка перекрывает этот лого если вдруг наезжаем  */
 .header__title {
   width: 730px;
   margin-left: 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
+  z-index: 2;
 }
 
-/*  необходимо обнулить браузерные отступы  */
 .header__subtitle {
   position: absolute;
   left: 64px;
@@ -54,6 +54,9 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
 }
 
 .link {
@@ -73,8 +76,7 @@
 .header__square-pic {
   position: absolute;
   right: 0;
-  /*  тут не margin-top, а просто top */
-  margin-top: 64px;
+  top: 64px;
   background-color: #2f80ed;
 }
 
@@ -90,13 +92,14 @@
   min-width: 784px;
 }
 
-/*  необходимо обнулить браузерные отступы  */
 .two-columns__brief {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   color: #2F80ED;
   width: 175px;
+  margin: 0;
+  padding: 0;
 }
 
 /*  неправильные отступы между абзацами (.two-columns__paragraph)
@@ -105,8 +108,14 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
+.two-columns__paragraph:last-child {
+  margin: 0;
+}
 .two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
